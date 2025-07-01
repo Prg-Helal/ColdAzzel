@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cold Azzel - Premium vegan beauty products for radiant skin. Shop our cruelty-free cosmetics collection.">
+    <meta name="theme-color" content="#f8d7da">
+    <title>Cold Azzel | Premium Vegan Beauty Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-left">
+                <a href="https://wa.me/201234567890" class="contact-link">
+                    <i class="fab fa-whatsapp"></i> +20 123 456 7890
+                </a>
+                <a href="mailto:info@coldazzel.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> info@coldazzel.com
+                </a>
+            </div>
+            <div class="topbar-right">
+                <div class="topbar-actions">
+                    <div class="lang-toggle">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ar">العربية</button>
+                    </div>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="login-btn" aria-label="Login">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navbar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Cold Azzel</a>
+
+            <div class="nav-links">
+                <a href="#home" data-i18n="nav.shop">Home</a>
+                <a href="#categories" data-i18n="nav.categories">Categories</a>
+                <a href="#about" data-i18n="nav.offers">About</a>
+                <a href="#contact" data-i18n="nav.about">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="Shopping cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" aria-label="Mobile menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <nav class="sidebar-nav">
+                <a href="#shop" data-i18n="nav.shop">Shop</a>
+                <a href="#categories" data-i18n="nav.categories">Categories</a>
+                <a href="#offers" data-i18n="nav.offers">Offers</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+            </nav>
+
+            <div class="sidebar-actions">
+
+                <div class="sidebar-settings">
+
+
+                    <div class="lang-toggle">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ar">العربية</button>
+                    </div>
+                </div>
+                <button class="login-btn" data-i18n="topbar.login">Login</button>
+
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-carousel">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active">
+                    <div class="slide-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9')">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="slide-title" data-i18n="hero.title1">Radiant Beauty Starts Here</h1>
+                        <p class="slide-text" data-i18n="hero.text1">Discover our vegan, cruelty-free cosmetics for your
+                            perfect glow</p>
+                        <a href="#shop" class="btn btn-primary" data-i18n="hero.cta">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348')">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="slide-title" data-i18n="hero.title2">Summer Glow Collection</h1>
+                        <p class="slide-text" data-i18n="hero.text2">Limited edition products for your sun-kissed look
+                        </p>
+                        <a href="#offers" class="btn btn-primary" data-i18n="hero.cta2">Explore</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1625772452859-1c03d5bf1137')">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="slide-title" data-i18n="hero.title3">Luxury Matte Lipsticks</h1>
+                        <p class="slide-text" data-i18n="hero.text3">24-hour wear with nourishing ingredients</p>
+                        <a href="#shop" class="btn btn-primary" data-i18n="hero.cta3">View Collection</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://images.unsplash.com/photo-1571781926291-c477ebfd024b')">
+                    </div>
+                    <div class="slide-content container">
+                        <h1 class="slide-title" data-i18n="hero.title4">Complete Skincare System</h1>
+                        <p class="slide-text" data-i18n="hero.text4">Transform your skin in just 7 days</p>
+                        <a href="#offers" class="btn btn-primary" data-i18n="hero.cta4">Shop Skincare</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-indicators"></div>
+                <button class="carousel-next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section id="categories" class="section featured-categories">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sections.categories">Shop By Category</h2>
+
+                <!-- Category 1 -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b" alt="Skincare products">
+                    </div>
+                    <div class="category-products">
+                        <h3 data-i18n="categories.skincare">Skin Care</h3>
+                        <div class="products-slider">
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e"
+                                    alt="Vitamin C Serum">
+                                <h4>Vitamin C Serum</h4>
+                                <p>$29.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c"
+                                    alt="Night Cream">
+                                <h4>Night Cream</h4>
+                                <p>$24.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1570737209810-87a9b6d6b1f3" alt="Face Mask">
+                                <h4>Detox Face Mask</h4>
+                                <p>$19.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-card reverse">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Makeup products">
+                    </div>
+                    <div class="category-products">
+                        <h3 data-i18n="categories.makeup">Makeup</h3>
+                        <div class="products-slider">
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137"
+                                    alt="Matte Lipstick">
+                                <h4>Matte Lipstick</h4>
+                                <p>$16.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de"
+                                    alt="Foundation">
+                                <h4>Liquid Foundation</h4>
+                                <p>$32.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
+                                    alt="Eyeshadow Palette">
+                                <h4>Eyeshadow Palette</h4>
+                                <p>$28.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883" alt="Body care products">
+                    </div>
+                    <div class="category-products">
+                        <h3 data-i18n="categories.bodycare">Body Care</h3>
+                        <div class="products-slider">
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6" alt="Body Lotion">
+                                <h4>Nourishing Body Lotion</h4>
+                                <p>$22.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2"
+                                    alt="Body Scrub">
+                                <h4>Exfoliating Scrub</h4>
+                                <p>$18.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                            <div class="product-slide">
+                                <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2"
+                                    alt="Shower Gel">
+                                <h4>Hydrating Shower Gel</h4>
+                                <p>$15.99</p>
+                                <button class="btn btn-outline" data-i18n="general.addToCart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Cold Azzel team">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title" data-i18n="sections.about">Our Story</h2>
+                    <p class="about-text" data-i18n="about.text1">Founded in 2018, Cold Azzel was born from a passion
+                        for clean, effective beauty products that enhance your natural radiance without compromise.</p>
+                    <p class="about-text" data-i18n="about.text2">We believe in cruelty-free, vegan formulations that
+                        deliver luxurious results while being kind to your skin and the planet.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label" data-i18n="stats.customers">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label" data-i18n="stats.years">Years of Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label" data-i18n="stats.crueltyFree">Cruelty-Free</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials">
+            <div class="container">
+                <h2 class="section-title" data-i18n="sections.testimonials">What Our Customers Say</h2>
+
+                <div class="testimonials-carousel">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonials.text1">"The Vitamin C Serum transformed
+                                my skin! I've never received so many compliments. Cold Azzel is now my go-to for all
+                                skincare."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah M."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <h4>Sarah M.</h4>
+                                    <p data-i18n="testimonials.verified">Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonials.text2">"The matte lipsticks are
+                                incredible! They last all day without drying my lips. The colors are perfect for every
+                                occasion."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Layla K."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <h4>Layla K.</h4>
+                                    <p data-i18n="testimonials.verified">Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text" data-i18n="testimonials.text3">"I love that Cold Azzel products
+                                are vegan and cruelty-free. The quality is outstanding and the packaging is beautiful."
+                            </p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina S."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <h4>Amina S.</h4>
+                                    <p data-i18n="testimonials.verified">Verified Buyer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-controls">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-indicators"></div>
+                    <button class="testimonial-next" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section newsletter-section" id="contact">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title" data-i18n="newsletter.title">Join Our Beauty Community</h2>
+                    <p class="newsletter-text" data-i18n="newsletter.text">Subscribe to get exclusive offers, beauty
+                        tips, and early access to new products.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required data-i18n-placeholder="form.email">
+                    <button type="submit" class="btn btn-primary" data-i18n="form.subscribe">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" >
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">Cold Azzel</h3>
+                    <p class="footer-text" data-i18n="footer.tagline">Premium vegan beauty products for your radiant
+                        glow.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title" data-i18n="footer.shop">Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="categories.skincare">Skin Care</a></li>
+                        <li><a href="#" data-i18n="categories.makeup">Makeup</a></li>
+                        <li><a href="#" data-i18n="categories.bodycare">Body Care</a></li>
+                        <li><a href="#" data-i18n="footer.newArrivals">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title" data-i18n="footer.help">Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.faq">FAQs</a></li>
+                        <li><a href="#" data-i18n="footer.shipping">Shipping & Returns</a></li>
+                        <li><a href="#" data-i18n="footer.track">Track Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title" data-i18n="footer.about">About</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="nav.about">Our Story</a></li>
+                        <li><a href="#" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="#" data-i18n="footer.careers">Careers</a></li>
+                        <li><a href="#" data-i18n="footer.press">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+
+                <p class="copyright" data-i18n="footer.copyright">© 2023 Cold Azzel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Notification Toast -->
+    <div class="toast-notification">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span class="toast-message" data-i18n="notification.added">Item added to cart!</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
