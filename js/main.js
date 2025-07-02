@@ -408,6 +408,22 @@ document.addEventListener('DOMContentLoaded', function () {
         langButtons.forEach(btn => {
             btn.classList.toggle('active', btn.dataset.lang === currentLang);
         });
+
+        // Update scroll direction for products sliders
+        document.querySelectorAll('.products-slider').forEach(slider => {
+            slider.style.direction = currentLang === 'ar' ? 'rtl' : 'ltr';
+        });
+
+
+        // Update sliders direction
+        document.querySelectorAll('.category-card').forEach(card => {
+            const slider = card.querySelector('.products-slider');
+            if (currentLang === 'ar') {
+                slider.style.direction = card.classList.contains('reverse') ? 'ltr' : 'rtl';
+            } else {
+                slider.style.direction = 'ltr';
+            }
+        });
     }
 
     // Initialize language
