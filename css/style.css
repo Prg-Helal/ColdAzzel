@@ -34,8 +34,7 @@
     text-align: right;
 }
 
-[dir="rtl"] .about-section .container,
-[dir="rtl"] .category-card:not(.reverse) {
+[dir="rtl"] .about-section .container {
     flex-direction: row-reverse;
 }
 
@@ -1025,7 +1024,7 @@ body {
 
 .testimonials-carousel {
     position: relative;
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .testimonial-slide {
@@ -1319,7 +1318,8 @@ body {
     .about-section .container {
         flex-direction: column;
     }
-    [dir ="rtl"] .about-section .container {
+
+    [dir="rtl"] .about-section .container {
         flex-direction: column;
     }
 
@@ -1381,6 +1381,8 @@ body {
     .category-card.reverse {
         flex-direction: column !important;
     }
+
+
 }
 
 @media (max-width: 576px) {
@@ -1415,40 +1417,16 @@ body {
     .testimonial-slide {
         padding: 0 20px;
     }
+
+    .about-stats {
+        justify-content: space-around;
+    }
 }
 
-[dir="rtl"] .carousel-controls , [dir="rtl"] .testimonials-controls {
+
+/* handle arrows */
+
+[dir="rtl"] .carousel-controls,
+[dir="rtl"] .testimonials-controls {
     flex-direction: row-reverse;
-}
-
-.products-slider {
-    direction: ltr; /* القيمة الافتراضية */
-}
-
-[dir="rtl"] .products-slider {
-    direction: rtl;
-}
-
-.products-slider::-webkit-scrollbar {
-    height: 6px;
-    direction: ltr; /* للحفاظ على اتجاه شريط التمرير */
-}
-
-[dir="rtl"] .products-slider::-webkit-scrollbar {
-    direction: rtl;
-}
-
-
-/* RTL Support for Sliders */
-[dir="rtl"] .category-card:not(.reverse) .products-slider {
-    direction: rtl;
-}
-
-[dir="rtl"] .category-card.reverse .products-slider {
-    direction: ltr;
-}
-
-/* Ensure scrollbar appears on the correct side */
-[dir="rtl"] .products-slider::-webkit-scrollbar {
-    direction: rtl;
 }
